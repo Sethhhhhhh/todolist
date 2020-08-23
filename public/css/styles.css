@@ -1,0 +1,75 @@
+body {
+    background-color: #E2E2E2;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px
+}
+
+h1 {
+    color: #3F3F3F;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-top: 0;
+    color: #3F3F3F;
+    font-weight: 300;
+}
+
+.box {
+    padding-top: 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 5px;
+}
+
+input[type="checkbox"] {
+    margin: 20px
+}
+
+input:checked+p {
+    text-decoration: line-through;
+    text-decoration-color: #3F3F3F;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+button {
+    width: 50px;
+    min-height: 50px;
+    background-color: #3F3F3F;
+    color: #fff;
+    font-size: 30px;
+    border-width: 0;
+    border-radius: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.add {
+    padding: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 60px);
+    border: none;
+    height: 40px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}

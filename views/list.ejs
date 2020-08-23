@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- META -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- TITLE -->
+        <title>ToDo List</title>
+        
+        <!-- LINK -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="box">
+            <h1> <%= day %> </h1>
+            <h3> <%= yearMonth %> </h3>
+            <% for (let i = 0; i < items.length; i++) { %> 
+                <div class="item">
+                    <input type="checkbox">
+                    <p> <%= items[i] %> </p>
+                </div>
+            <% } %>
+            <form class="add" action="/" method="POST">
+                <input type="text" name="newItem" placeholder="New item" autocomplete="off">
+                <button type="submit" name="btn">+</button>
+            </form>
+        </div>
+    </body>
+</html>
